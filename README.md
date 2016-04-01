@@ -27,6 +27,7 @@ I've tried a number of methods to resolve the issues, with no avail:
 - Changing subview layout constraint priorities to 999
 - Limiting `UILabel`s to 1 line, and setting a `preferredMaxLayoutWidth`
 - Adjusting the `contentCompressionResistance` and `contentHuggingPriority` of subviews
+- Using a static value for `rowHeight` instead of `UITableViewAutomaticDimension`
 - Etc.
 
 Issues on cells are not even always resolved after the cell has been scrolled off screen and configured again, and sometimes this introduces new issues on different cells.
